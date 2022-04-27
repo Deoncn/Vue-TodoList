@@ -1,16 +1,18 @@
 <template>
-
+  <div id="root">
+    <MyHeader />
+    <MyList />
+  </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import MyHeader from "./components/MyHeader.vue";
+import MyList from "./components/MyList.vue";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: { MyHeader,MyList },
+};
 </script>
 
 <style>
